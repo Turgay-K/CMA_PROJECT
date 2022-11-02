@@ -59,10 +59,26 @@ public with sharing class AppointmentDoctorTriggerHandler {
         system.debug(mapOfAppointmentEndDates);
 
         for (Appointment_Doctor__c eachNameDate : listNameDate) {
-            if (eachNameDate.Doctor__r.Name == mapOfDoctorNames.get(eachNameDate.Doctor__r.Id) && (eachNameDate.Appointment__r.Start_Date_Time__c == mapOfAppointmentStartDates.get(eachNameDate.Appointment__c) || eachNameDate.Appointment__r.End_Date_Time__c == mapOfAppointmentEndDates.get(eachNameDate.Appointment__c))){
+           if (eachNameDate.Doctor__r.Name == mapOfDoctorNames.get(eachNameDate.Doctor__r.Id)) {
             for (Appointment_Doctor__c eachTN : adTriggerNew) {
-            eachTN.Doctor__c.addError('This doctor already has an appointment! Please select another doctor');
-            }
+                eachTN.Doctor__c.addError('This doctor already has an appointment! Please select another doctor');
+                }
+
+                /*
+                if (eachNameDate.Appointment__r.Start_Date_Time__c <= mapOfAppointmentStartDates.get(eachNameDate.Appointment__c && eachNameDate.Appointment__r.End_Date_Time__c <= mapOfAppointmentEndDates.get(eachNameDate.Appointment__c))){
+                    for (Appointment_Doctor__c eachTN : adTriggerNew) {
+                eachTN.Doctor__c.addError('This doctor already has an appointment! Please select another doctor');
+                }
+                }
+                */
+
+                /*
+                if(eachNameDate.Appointment__r.Start_Date_Time__c == mapOfAppointmentStartDates.get(eachNameDate.Appointment__c) || eachNameDate.Appointment__r.End_Date_Time__c == mapOfAppointmentEndDates.get(eachNameDate.Appointment__c)){
+                     for (Appointment_Doctor__c eachTN : adTriggerNew) {
+                eachTN.Doctor__c.addError('This doctor already has an appointment! Please select another doctor');
+                }
+                }
+                */
         }
     }
 }
