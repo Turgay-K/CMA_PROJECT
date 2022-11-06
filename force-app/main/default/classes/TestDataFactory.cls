@@ -1,5 +1,5 @@
-public with sharing class CMA_Data {
-    public static List<Appointment__c> app_test(integer n) {
+public with sharing class TestDataFactory {
+    public static List<Appointment__c> appointmentTestData(integer n) {
         List<Appointment__c> listAppointment = new List<Appointment__c>();
         for (Integer i = 0; i < n; i++) {
             Appointment__c app1 = new Appointment__c();
@@ -13,8 +13,7 @@ public with sharing class CMA_Data {
         insert listAppointment;
         return listAppointment;
     }
-        
-        public static List<Doctor__c> doc_test(integer n){
+        public static List<Doctor__c> doctorTestData(integer n){
         List<Doctor__c> listDoctor = new List<Doctor__c>();
         for (Integer i = 0; i < n; i++) {
             Doctor__c doc1 = new Doctor__c();
@@ -26,6 +25,4 @@ public with sharing class CMA_Data {
         insert listDoctor;
         return listDoctor; 
     }
-
-    
 }
