@@ -1,0 +1,1 @@
+ErrorLog.createErrorLog(datetime.now(), 'Log Details Info is =>', 'Process Name is =>');
