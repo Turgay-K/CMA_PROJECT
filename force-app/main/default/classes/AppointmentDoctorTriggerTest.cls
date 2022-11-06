@@ -2,8 +2,8 @@
 public with sharing class AppointmentDoctorTriggerTest {
 @TestSetup
 static void makeDataAD(){
-CMA_Data.app_test(199);
-CMA_Data.doc_test(199);
+TestDataFactory.appointmentTestData(199);
+TestDataFactory.doctorTestData(199);
 }
 @isTest
 public static void junctionOnj() {
