@@ -1,0 +1,57 @@
+/*REQUIREMENTS: 
+===> Develop Schedulable Apex Batch - Write a Schedulable  Apex Batch which should purge(delete) all the event records which are more than 2 months old & have been Organized. 
+===> Hint - Use End Date of the Event & live? checkbox of Event Record. 
+===> In the finish method of the batch apex sends an email to the “Public Group“ email address saying that execution of the batch has been processed.  
+===> (Run every 3.00AM automatically)
+1. A handler class must be used for the batch. 
+2. Send Email from the finish method as outlined in the requirement .
+3.Create a Public Group named  “Daily Job”.
+a.Add two active users into the Public Group.
+b.Email those users.*/
+
+public class AppointmentBatchHandlerClass implements Database.Batchable<sObject>{
+   
+    //1. start method.
+    public database.QueryLocator start(Database.BatchableContext bc){
+        //soql to fetch records.
+        //on appointment records
+       //system.debug('Batch started. ');
+   
+       
+        date d=system.today().adddays(-60);        
+        Database.QueryLocator q1 = database.getQueryLocator([SELECT Id, LastModifiedDate, Status__c, Live__c, End_Date_Time__c FROM Appointment__c where status = 'Completed' AND End_Date_Time__c < LAST_N_DAYS:60]);
+        return q1;
+    }
+    //2. execute method.
+    public void execute(Database.BatchableContext bc, list<Appointment__c> scope){
+        system.debug('scope');
+
+        for (Appointment__c eachApp : scope) {
+            if(eachApp.End_Date_Time__c == d && eachApp.status = 'completed' && Live__c!=true) {
+                
+            }
+    
+            Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage();
+    
+            email.setToAddresses(new String[] {'adembalaban@gmail.com'});
+    
+            email.setSubject('Appointment completed date');
+    
+            email.setPlainTextBody('Dear user, all  appointments completed  in more than 2 months are deleted ');
+    
+            emails.add(email);
+    
+            }
+    
+            Messaging.sendEmail(emails);
+    
+            delete scope;
+            
+        }
+      
+      //3. finish method.
+    public void finish(Database.BatchableContext bc){
+        system.debug('An email is sent to the users');
+    }  
+    }
+    
