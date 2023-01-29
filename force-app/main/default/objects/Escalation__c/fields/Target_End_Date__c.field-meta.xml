@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_End_Date__c</fullName>
+    <description>Date when the account is projected to be moved out of Red status. Not necessarily the same as the actual End Date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set to Date when the issue is projected to be resolved</inlineHelpText>
+    <label>Target End Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RCA_Outcome__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates what changed as a result of this escalation</inlineHelpText>
+    <label>RCA Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Best Practice</fullName>
+                <default>false</default>
+                <label>Best Practice</label>
+            </value>
+            <value>
+                <fullName>Needs Improvement</fullName>
+                <default>false</default>
+                <label>Needs Improvement</label>
+            </value>
+            <value>
+                <fullName>Best Practice / Needs Improvement</fullName>
+                <default>false</default>
+                <label>Best Practice / Needs Improvement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

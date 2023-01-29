@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Watchlist_End_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Current Watchlist End Date for the #Total Days Watchlist formula</inlineHelpText>
+    <label>Watchlist End Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

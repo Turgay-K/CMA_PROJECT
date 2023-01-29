@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alert_Recipients__c</fullName>
+    <description>EM Only field to be used for sending alerts</description>
+    <externalId>false</externalId>
+    <formula>IF(LEN( Issue_Owner__r.FirstName  )&gt;0,Issue_Owner__r.FirstName +&quot; &quot;+Issue_Owner__r.LastName +&quot;; &quot;,&quot;&quot;)+ 
+IF(LEN( Issue_Owner_s_Manager__c )&gt;0,Issue_Owner__r.Manager.FirstName + &quot; &quot; + Issue_Owner__r.Manager.LastName +&quot;;&quot;,&quot;&quot;)+ 
+IF(LEN( Sales_Rep__c )&gt;0,Sales_Rep__r.FirstName + &quot; &quot; + Sales_Rep__r.LastName +&quot;; &quot;,&quot;&quot;)+ 
+IF(LEN(  Sales_Rep_Manager__c  )&gt;0,  Sales_Rep_Manager__r.FirstName + &quot; &quot; + Sales_Rep_Manager__r.LastName  +&quot;; &quot;,&quot;&quot;)+ 
+IF(LEN(  Services_Contact__c  )&gt;0, Services_Contact__r.FirstName  + &quot; &quot; + Services_Contact__r.LastName  +&quot;; &quot;,&quot;&quot;)+ 
+IF(LEN( Services_Manager__c )&gt;0, Services_Manager__r.FirstName + &quot; &quot; + Services_Manager__r.LastName +&quot;; &quot;,&quot;&quot;)+ 
+IF(LEN( Support_Rep__c  )&gt;0, Support_Rep__r.FirstName + &quot; &quot; + Support_Rep__r.LastName +&quot;; &quot;,&quot;&quot;)+ 
+IF(LEN( Support_Rep_Manager__c  )&gt;0, Support_Rep_Manager__r.FirstName + &quot; &quot; +Support_Rep_Manager__r.LastName +&quot;; &quot;,&quot;&quot;)+
+IF(LEN( Executive_Sponsor__c )&gt;0,  Executive_Sponsor__r.FirstName + &quot; &quot; + Executive_Sponsor__r.LastName +&quot;; &quot;,&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Alert Recipients</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_Root_Cause__c</fullName>
+    <externalId>false</externalId>
+    <label>Secondary Root Cause</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Competitive Situation</fullName>
+                <default>false</default>
+                <label>Competitive Situation</label>
+            </value>
+            <value>
+                <fullName>Expert Services were not engaged</fullName>
+                <default>false</default>
+                <label>Expert Services were not engaged</label>
+            </value>
+            <value>
+                <fullName>Feature/Functionality</fullName>
+                <default>false</default>
+                <label>Feature/Functionality</label>
+            </value>
+            <value>
+                <fullName>Financially Distressed</fullName>
+                <default>false</default>
+                <label>Financially Distressed</label>
+            </value>
+            <value>
+                <fullName>ISV App</fullName>
+                <default>false</default>
+                <label>ISV App</label>
+            </value>
+            <value>
+                <fullName>Lack of customer Salesforce skills</fullName>
+                <default>false</default>
+                <label>Lack of customer Salesforce skills</label>
+            </value>
+            <value>
+                <fullName>Merger/Acquisition</fullName>
+                <default>false</default>
+                <label>Merger/Acquisition</label>
+            </value>
+            <value>
+                <fullName>Non-Payment by Customer</fullName>
+                <default>false</default>
+                <label>Non-Payment by Customer</label>
+            </value>
+            <value>
+                <fullName>Partner resources not certified</fullName>
+                <default>false</default>
+                <label>Partner resources not certified</label>
+            </value>
+            <value>
+                <fullName>Performance</fullName>
+                <default>false</default>
+                <label>Performance</label>
+            </value>
+            <value>
+                <fullName>Platform</fullName>
+                <default>false</default>
+                <label>Platform</label>
+            </value>
+            <value>
+                <fullName>Pod related</fullName>
+                <default>false</default>
+                <label>Pod related</label>
+            </value>
+            <value>
+                <fullName>Poorly defined requirements</fullName>
+                <default>false</default>
+                <label>Poorly defined requirements</label>
+            </value>
+            <value>
+                <fullName>Poor Partner project management skills</fullName>
+                <default>false</default>
+                <label>Poor Partner project management skills</label>
+            </value>
+            <value>
+                <fullName>Release related</fullName>
+                <default>false</default>
+                <label>Release related</label>
+            </value>
+            <value>
+                <fullName>Sold wrong product/version</fullName>
+                <default>false</default>
+                <label>Sold wrong product/version</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

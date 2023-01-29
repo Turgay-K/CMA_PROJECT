@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Module_at_Risk__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Module at Risk</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Primary_Product_at_Risk__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Product A Module 1</fullName>
+                <default>false</default>
+                <label>Product A Module 1</label>
+            </value>
+            <value>
+                <fullName>Product A Module 2</fullName>
+                <default>false</default>
+                <label>Product A Module 2</label>
+            </value>
+            <value>
+                <fullName>Product B Module 1</fullName>
+                <default>false</default>
+                <label>Product B Module 1</label>
+            </value>
+            <value>
+                <fullName>Product B Module 2</fullName>
+                <default>false</default>
+                <label>Product B Module 2</label>
+            </value>
+            <value>
+                <fullName>Product C Module 1</fullName>
+                <default>false</default>
+                <label>Product C Module 1</label>
+            </value>
+            <value>
+                <fullName>Product C Module 2</fullName>
+                <default>false</default>
+                <label>Product C Module 2</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Product A</controllingFieldValue>
+            <valueName>Product A Module 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product A</controllingFieldValue>
+            <valueName>Product A Module 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product B</controllingFieldValue>
+            <valueName>Product B Module 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product B</controllingFieldValue>
+            <valueName>Product B Module 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product C</controllingFieldValue>
+            <valueName>Product C Module 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product C</controllingFieldValue>
+            <valueName>Product C Module 2</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Appointment_validity</fullName>
+    <active>true</active>
+    <description>Patient can only be associated with an appointment whose end date is in the future or the appointment live checkbox is checked or the clinic is accepting a new patient.</description>
+    <errorConditionFormula>Appointment__r.End_Date_Time__c &lt; NOW()  ||   Appointment__r.Live__c = false  ||   Appointment__r.Remaining_Appointment__c =0</errorConditionFormula>
+    <errorDisplayField>Appointment__c</errorDisplayField>
+    <errorMessage>No appointment is available. Please check if appointment end date is in the past OR live checkbox is unchecked OR number of remaining appointments is 0 (zero).</errorMessage>
+</ValidationRule>

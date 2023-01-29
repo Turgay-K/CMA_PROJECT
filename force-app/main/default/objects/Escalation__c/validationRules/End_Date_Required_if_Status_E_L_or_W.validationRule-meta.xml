@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>End_Date_Required_if_Status_E_L_or_W</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISPICKVAL(  Status__c  , &quot;Watchlist&quot;) || ISPICKVAL( Status__c , &quot;Lost&quot;) || ISPICKVAL( Status__c, &quot;Resolved&quot;)) &amp;&amp; ISNULL( Escalation_End_Date__c )</errorConditionFormula>
+    <errorDisplayField>Escalation_End_Date__c</errorDisplayField>
+    <errorMessage>When Choosing a Resolved, Lost, or Watchlist Stage, You Must Enter an Escalation End Date</errorMessage>
+</ValidationRule>

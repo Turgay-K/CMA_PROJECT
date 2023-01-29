@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Services_VP__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Identify VP of Services for Alert purposes. This field could be autopopulated if the same person for every escalation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Identify VP of Services for Alert purposes.</inlineHelpText>
+    <label>Services VP</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>EscalationsDkcE</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

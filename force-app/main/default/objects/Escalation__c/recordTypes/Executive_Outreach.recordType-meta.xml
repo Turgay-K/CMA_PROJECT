@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Executive_Outreach</fullName>
+    <active>true</active>
+    <description>Use when there is an escalation, and a customer has requested an executive outreach.</description>
+    <label>Executive Outreach</label>
+    <picklistValues>
+        <picklist>Escalation_Trend__c</picklist>
+        <values>
+            <fullName>Declining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Neutral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Exec_Escalation_Reason__c</picklist>
+        <values>
+            <fullName>Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Awareness</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Key_Risk_Category__c</picklist>
+        <values>
+            <fullName>Account Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adoption%2FValue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Economic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implementation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Inflicted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Competitor__c</picklist>
+        <values>
+            <fullName>Competitor 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Product_at_Risk__c</picklist>
+        <values>
+            <fullName>Product A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Root_Cause__c</picklist>
+        <values>
+            <fullName>Competitive Situation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expert Services were not engaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature%2FFunctionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financially Distressed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISV App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of customer Salesforce skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merger%2FAcquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Payment by Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner resources not certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pod related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Partner project management skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poorly defined requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Release related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sold wrong product%2Fversion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Module_at_Risk__c</picklist>
+        <values>
+            <fullName>Product A Module 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product A Module 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product B Module 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product B Module 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product C Module 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product C Module 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RCA_Outcome__c</picklist>
+        <values>
+            <fullName>Best Practice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Best Practice %2F Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Improvement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RCA_Status__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Risk_Detail__c</picklist>
+        <values>
+            <fullName>Contract Transfer to ISV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Dissatisfaction%2Fwith commercial terms %28Bill Frequency%2FMSA%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissatisfaction with technical Support %26 Service experience</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed to customize Product to meet Business Processes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Support Structure%2FInadequate Change Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insufficient Value</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Executive Relationship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Internal Sponsorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of Long Term vision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited Life licenses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26A Corp Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M%26A Corp Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Management Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Security Policies%2FRegulatory restrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Business%2FBankruptcy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oversold %E2%80%93 Transfer of Users</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform or Infrastructure Instabililty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Architecture Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Data Quality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price List change %28product%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price Reduction%2FFinancial Distress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Tier achievement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Feature Gap</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re Price - New Business%2FNew contract Term</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reduction in Force %28RIF%29 Restructure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Economic Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sold Wrong Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stagnant Feature Set</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended%2FPayment Issues</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Secondary_Root_Cause__c</picklist>
+        <values>
+            <fullName>Competitive Situation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Expert Services were not engaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feature%2FFunctionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financially Distressed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISV App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of customer Salesforce skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merger%2FAcquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Payment by Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner resources not certified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pod related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Partner project management skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poorly defined requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Release related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sold wrong product%2Fversion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Invalid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yellow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Symptoms__c</picklist>
+        <values>
+            <fullName>Adoption Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitive Threat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Sat %2F Value Perception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Sponsorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Features %2F Solution Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial %2F Budgetary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implementation Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Merger %2F Acquisition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regulatory %2F Compliance Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical Issue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

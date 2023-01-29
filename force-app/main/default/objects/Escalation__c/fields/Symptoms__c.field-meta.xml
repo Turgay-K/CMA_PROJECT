@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Symptoms__c</fullName>
+    <description>Select factors contributing to the issue and drive creation of this Escalation record. Help to guide the assignment of Escalation team and define Action Plan.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select factors contributing to the issue</inlineHelpText>
+    <label>Symptoms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adoption Issue</fullName>
+                <default>false</default>
+                <label>Adoption Issue</label>
+            </value>
+            <value>
+                <fullName>Competitive Threat</fullName>
+                <default>false</default>
+                <label>Competitive Threat</label>
+            </value>
+            <value>
+                <fullName>Customer Sat / Value Perception</fullName>
+                <default>false</default>
+                <label>Customer Sat / Value Perception</label>
+            </value>
+            <value>
+                <fullName>Customer Sponsorship</fullName>
+                <default>false</default>
+                <label>Customer Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Features / Solution Issue</fullName>
+                <default>false</default>
+                <label>Features / Solution Issue</label>
+            </value>
+            <value>
+                <fullName>Financial / Budgetary</fullName>
+                <default>false</default>
+                <label>Financial / Budgetary</label>
+            </value>
+            <value>
+                <fullName>Implementation Issue</fullName>
+                <default>false</default>
+                <label>Implementation Issue</label>
+            </value>
+            <value>
+                <fullName>Merger / Acquisition</fullName>
+                <default>false</default>
+                <label>Merger / Acquisition</label>
+            </value>
+            <value>
+                <fullName>Partner Issue</fullName>
+                <default>false</default>
+                <label>Partner Issue</label>
+            </value>
+            <value>
+                <fullName>Regulatory / Compliance Issue</fullName>
+                <default>false</default>
+                <label>Regulatory / Compliance Issue</label>
+            </value>
+            <value>
+                <fullName>Sales Issue</fullName>
+                <default>false</default>
+                <label>Sales Issue</label>
+            </value>
+            <value>
+                <fullName>Technical Issue</fullName>
+                <default>false</default>
+                <label>Technical Issue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

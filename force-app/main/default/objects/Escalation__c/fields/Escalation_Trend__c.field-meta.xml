@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalation_Trend__c</fullName>
+    <description>Red account trending field to monitor progress, up, down or neutral of a red account issue.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Change since the previous Red Accout Review call</inlineHelpText>
+    <label>Customer Sentiment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Improving</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>Improving</label>
+            </value>
+            <value>
+                <fullName>Neutral</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+                <label>Neutral</label>
+            </value>
+            <value>
+                <fullName>Declining</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>Declining</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Virtual_App_No_Location</fullName>
+    <active>false</active>
+    <description>You can&apos;t select a location because this is a virtual appointment.</description>
+    <errorConditionFormula>ISPICKVAL( Appointment_Type__c , &apos;Virtual&apos;) &amp;&amp;  !(Location__c = &apos;&apos;)</errorConditionFormula>
+    <errorDisplayField>Location__c</errorDisplayField>
+    <errorMessage>You can&apos;t select a location because this is a virtual appointment.</errorMessage>
+</ValidationRule>

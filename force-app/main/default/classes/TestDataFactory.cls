@@ -1,13 +1,14 @@
+@isTest
 public with sharing class TestDataFactory {
     public static List<Appointment__c> appointmentTestData(integer n) {
         List<Appointment__c> listAppointment = new List<Appointment__c>();
         for (Integer i = 0; i < n; i++) {
             Appointment__c app1 = new Appointment__c();
-            app1.Name__c ='Cardiology';
+            app1.Name__c ='Cardiology'+i;
             app1.Clinic_Manager__c = 'a01Dn000001jLd7IAE';
-            app1.Start_Date_Time__c = Datetime.now().addDays(3);
-            app1.End_Date_Time__c = Datetime.now().addDays(5);
-            app1.Maximum_number_of_patients__c = 12;
+            app1.Start_Date_Time__c = Datetime.now().addDays(3+i);
+            app1.End_Date_Time__c = Datetime.now().addDays(5+i);
+            app1.Maximum_number_of_patients__c = 12+i;
             listAppointment.add(app1);
         }
         insert listAppointment;

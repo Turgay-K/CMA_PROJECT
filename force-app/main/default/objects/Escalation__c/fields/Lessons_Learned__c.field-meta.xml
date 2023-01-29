@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lessons_Learned__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate knowledge gained from this resolution effort so it can be leveraged to resolve future Escalations with the same successful methodology. Also call out areas where changing conditions &amp; approach are called for to improve the Escalations process.</inlineHelpText>
+    <label>Lessons Learned</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

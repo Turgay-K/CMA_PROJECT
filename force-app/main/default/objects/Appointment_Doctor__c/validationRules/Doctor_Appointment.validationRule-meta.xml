@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doctor_Appointment</fullName>
+    <active>false</active>
+    <description>Doctor can only be associated with the Appointment whose End Date is in future &amp; Appointment Live Checkbox is checked</description>
+    <errorConditionFormula>Appointment__r.End_Date_Time__c &lt; NOW() || Appointment__r.Live__c = false</errorConditionFormula>
+    <errorDisplayField>Doctor__c</errorDisplayField>
+    <errorMessage>No appointment is not available/ Please check Appointment End Date or Live checkbox</errorMessage>
+</ValidationRule>

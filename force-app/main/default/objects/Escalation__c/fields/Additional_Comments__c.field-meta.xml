@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Comments__c</fullName>
+    <description>Additional Owner(s) log updates here or in Chatter. Issue Owner then compiles updates to update Issue, Action Plan, and History fields.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Additional Owner(s) log updates here or in Chatter. Issue Owner then compiles updates to update Issue, Action Plan, and History fields.</inlineHelpText>
+    <label>Additional Comments</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>15</visibleLines>
+</CustomField>

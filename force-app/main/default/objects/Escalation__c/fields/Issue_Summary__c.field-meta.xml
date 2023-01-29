@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_Summary__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a high level field representing the CURRENT issue. It should be concise(&lt;400 characters) for execs to read. Details should be placed in Issue Details field.</inlineHelpText>
+    <label>Issue Summary</label>
+    <length>32000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

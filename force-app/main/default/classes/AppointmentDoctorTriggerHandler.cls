@@ -10,7 +10,7 @@ public with sharing class AppointmentDoctorTriggerHandler {
 
         for (Appointment_Doctor__c comp : adTriggerNew) {
             if (allIDs.contains(comp.Appointment__c + '' + comp.Doctor__c)){
-                comp.Doctor__c.addError('Please select another appointment or doctor. Duplicate error!');
+                comp.addError('Please select another appointment or doctor. Duplicate error!');
             }
         }
     }

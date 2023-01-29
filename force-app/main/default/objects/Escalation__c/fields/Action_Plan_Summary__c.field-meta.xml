@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Action_Plan_Summary__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>List open action steps for resolving the issue. For each actionable task, list the owner and the expected date of completion. Keep this brief and to the point.</inlineHelpText>
+    <label>Action Plan Summary</label>
+    <length>32000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

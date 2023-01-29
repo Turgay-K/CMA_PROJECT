@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exec_Escalation_Reason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select purpose of escalation: 
+1. Awareness- based on significant revenue at risk and/or notable actions underway; 
+2. Action- should be explained in the &quot;Action Plan&quot; field 
+3. Exec Watch list- for new or nearly resolved issues on interest to Execs</inlineHelpText>
+    <label>Exec Escalation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Action</fullName>
+                <default>false</default>
+                <label>Action</label>
+            </value>
+            <value>
+                <fullName>Awareness</fullName>
+                <default>false</default>
+                <label>Awareness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

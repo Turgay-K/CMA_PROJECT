@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exec_Action_reqd_if_Exec_Esc_is_Action</fullName>
+    <active>true</active>
+    <description>If EVP Escalation Reason is Action, then Executive Action Requested is required</description>
+    <errorConditionFormula>ISPICKVAL( Exec_Escalation_Reason__c , &quot;Action&quot;) &amp;&amp; LEN( Exec_Action_Requested__c )=0</errorConditionFormula>
+    <errorDisplayField>Exec_Action_Requested__c</errorDisplayField>
+    <errorMessage>If EVP Escalation Reason is Action, then Executive Action Requested is required</errorMessage>
+</ValidationRule>
