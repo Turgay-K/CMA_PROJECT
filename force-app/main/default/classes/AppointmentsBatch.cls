@@ -2,6 +2,8 @@ public class AppointmentsBatch implements Database.Batchable<sObject>{
     public database.QueryLocator start(Database.BatchableContext bc){
         Database.QueryLocator q1 = database.getQueryLocator([SELECT Status__c, End_Date_Time__c FROM Appointment__c where status__c = 'Completed' AND End_Date_Time__c < LAST_N_DAYS:60]);
         return q1;
+
+        // shortcut: return Database.getQueryLocator([SELECT Status__c, End_Date_Time__c FROM Appointment__c where status__c = 'Completed' AND End_Date_Time__c < LAST_N_DAYS:60]);
     }
     public void execute(Database.BatchableContext bc, List<Appointment__c> scope){
         List<Appointment__c> deleteAppointments = new List<Appointment__c>();

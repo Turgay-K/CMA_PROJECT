@@ -1,7 +1,7 @@
 public class AppointmentsBatchHandler {
     public static void AppointmentsBatchSendEmail() {
     //query the Public Group using Name 
-    List<Group> publicGroup = [SELECT Id FROM Group WHERE Name= 'Daily Job Public Group' and Type = 'Regular' LIMIT 1];
+    List<Group> publicGroup = [SELECT Id FROM Group WHERE Name= 'Daily Job Public Group' and Type = 'Regular'];
     //query on the GroupMember sObject to get the User IDs
     List<Id> userIds = new List<Id>(); //make sure this is a List<Id> because Set<Id> is not accepted into setTargetObjectIds(Ids);
     if(publicGroup != null && !publicGroup.isEmpty()){
